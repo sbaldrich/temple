@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.bcorp.{{cookiecutter.repo_name}}.zen;
+
+message ZenRequest {
+  string name = 1;
+}
+message ZenResponse{
+  string message = 1;
+}
+service Zen{
+  rpc zen(ZenRequest) returns (ZenResponse);
+}
