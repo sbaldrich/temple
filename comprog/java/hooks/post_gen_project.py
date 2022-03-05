@@ -2,9 +2,9 @@ from imp import source_from_cache
 import os
 import shutil
 
-source_file = "{{ cookiecutter.repo_name }}.java"
+source_file = "{{ cookiecutter.classname }}.java"
 
 shutil.copy(source_file, "..")
-os.remove("{{ cookiecutter.repo_name }}.java")
+os.remove("{{ cookiecutter.classname }}.java")
 os.chdir("..")
-os.rmdir("{{cookiecutter.repo_name}}")
+os.rmdir("{{cookiecutter.classname}}")
