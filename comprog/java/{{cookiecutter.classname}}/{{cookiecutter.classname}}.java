@@ -4,6 +4,10 @@ import java.util.*;
 class Main {
 
 	public static void main(String[] args){
+		{%- if cookiecutter.comments -%}
+		// Initialize a ContestIO reading from __input.txt. 
+		// If the file doesn't exist, read from stdin.
+		{% endif %}
 		ContestIO io = ContestIO.get("__input.txt");
         // Solve here
 		io.out.close();
