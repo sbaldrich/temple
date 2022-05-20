@@ -34,10 +34,11 @@ public class ZenResource {
 
   @GET
   @Path("/async")
-  @Produces(MediaType.TEXT_PLAIN)
+  @Produces(MediaType.APPLICATION_JSON)
   public void asyncGetIt(@Suspended AsyncResponse response) {
-    CompletableFuture.completedFuture(messageProvider.get())
-        .thenApply(it -> it.toUpperCase(Locale.ROOT))
-        .thenApply(response::resume);
+      CompletableFuture.completedFuture(messageProvider.get())
+              .thenApply(it -> it.toUpperCase(Locale.ROOT))
+              .thenApply(message -> Response.ok(Message.of(message)).build())
+              .thenApply(response::resume);
   }
 }
