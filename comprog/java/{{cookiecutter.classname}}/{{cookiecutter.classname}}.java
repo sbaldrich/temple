@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class {{cookiecutter.classname}} {
+public class {{cookiecutter.classname}} {
 
     public static void main(String[] args){
         {%- if cookiecutter.comments == True %}
