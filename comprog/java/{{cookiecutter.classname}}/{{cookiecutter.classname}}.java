@@ -63,6 +63,12 @@ public class {{cookiecutter.classname}} {
             out.printf(format, args);
             return this;
         }
+        
+        ContestIO printfln(final String format, final Object... args){
+            printf(format, args);
+            out.println();
+            return this;
+        }
 
         ContestIO println(final Object arg){
             out.println(arg);
