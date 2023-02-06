@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bcorp</groupId>
-	<artifactId>signup</artifactId>
+	<artifactId>{{cookiecutter.repo_name}}</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>signup</name>
 	<description>Simple Spring Boot Based Signup / Login Service</description>
