@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package com.bcorp.{{cookiecutter.repo_name}}.grpc.zen;
+
+option java_multiple_files = true;
+option java_package = "com.bcorp.{{cookiecutter.repo_name}}.grpc.zen";
+option java_outer_classname = "ZenProto";
+
+// The zen service definition.
+service ZenService {
+  // gets some zen
+  rpc ProvideWisdom (google.protobuf.Empty) returns (WiseMessage) {}
+}
+
+// The response message containing the wisdom
+message WiseMessage {
+  string message = 1;
+}

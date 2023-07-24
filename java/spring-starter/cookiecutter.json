@@ -1,0 +1,4 @@
+{
+  "repo_name": "wisdom",
+  "service_name" : "{{cookiecutter.repo_name.capitalize() + 'Service'}}"
+}
