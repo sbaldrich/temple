@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.bcorp</groupId>
-        <artifactId>starter</artifactId>
+        <artifactId>{{cookiecutter.repo_name}}</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>starter-service</artifactId>
+    <artifactId>{{cookiecutter.repo_name}}-service</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -46,7 +46,7 @@
 
         <dependency>
             <groupId>com.bcorp</groupId>
-            <artifactId>starter-proto</artifactId>
+            <artifactId>{{cookiecutter.repo_name}}-proto</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -72,6 +72,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

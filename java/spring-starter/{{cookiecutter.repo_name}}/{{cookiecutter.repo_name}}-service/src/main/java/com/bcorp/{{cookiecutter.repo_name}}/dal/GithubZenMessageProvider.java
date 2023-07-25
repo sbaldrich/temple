@@ -1,6 +1,6 @@
 package com.bcorp.{{cookiecutter.repo_name}}.dal;
 
-import com.bcorp.signup.domain.messages.MessageProvider;
+import com.bcorp.{{cookiecutter.repo_name}}.domain.messages.MessageProvider;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 

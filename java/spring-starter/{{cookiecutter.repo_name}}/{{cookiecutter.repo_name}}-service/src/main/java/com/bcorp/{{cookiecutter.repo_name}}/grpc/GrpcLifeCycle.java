@@ -1,6 +1,6 @@
 package com.bcorp.{{cookiecutter.repo_name}}.grpc;
 
-import com.bcorp.signup.config.GrpcServerProperties;
+import com.bcorp.{{cookiecutter.repo_name}}.config.GrpcServerProperties;
 import com.google.common.collect.Lists;
 import io.grpc.BindableService;
 import io.grpc.Server;

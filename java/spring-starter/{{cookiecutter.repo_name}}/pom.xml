@@ -10,14 +10,26 @@
     </parent>
 
     <groupId>com.bcorp</groupId>
-    <artifactId>starter</artifactId>
+    <artifactId>{{cookiecutter.repo_name}}</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>signup</name>
-    <description>spring boot starter</description>
+    <name>{{cookiecutter.repo_name}}-parent</name>
+    <description>{{cookiecutter.repo_name}} - created from the spring boot starter</description>
 
     <modules>
-        <module>starter-proto</module>
-        <module>starter-service</module>
+        <module>{{cookiecutter.repo_name}}-proto</module>
+        <module>{{cookiecutter.repo_name}}-service</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

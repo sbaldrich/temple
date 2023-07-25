@@ -1,9 +1,9 @@
 package com.bcorp.{{cookiecutter.repo_name}}.presentation.grpc;
 
-import com.bcorp.signup.domain.messages.MessageProvider;
-import com.bcorp.signup.grpc.GrpcService;
-import com.bcorp.starter.grpc.zen.WiseMessage;
-import com.bcorp.starter.grpc.zen.ZenServiceGrpc;
+import com.bcorp.{{cookiecutter.repo_name}}.domain.messages.MessageProvider;
+import com.bcorp.{{cookiecutter.repo_name}}.grpc.GrpcService;
+import com.bcorp.{{cookiecutter.repo_name}}.grpc.zen.WiseMessage;
+import com.bcorp.{{cookiecutter.repo_name}}.grpc.zen.ZenServiceGrpc;
 import com.google.protobuf.Empty;
 import io.grpc.stub.StreamObserver;
 
