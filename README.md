@@ -19,5 +19,6 @@ The structure of this section attempts to mimic closely the structure of the tem
 * java
   * jersey-rest-grpc: a simple service that grabs zen quotes from the github zen api. Has GRPC and REST endpoints.
   * spring-user-signup-api: **[alpha]** a super rough spring-boot + spring-security API that supports user signup and login.
+  * spring-starter: A simple spring-boot starter service with basic support for gRPC.
 * comprog
   * java: comprog template with a `ContestIO` class to help with input/output when solving problems using java. Can use both stdin/out and text files.
